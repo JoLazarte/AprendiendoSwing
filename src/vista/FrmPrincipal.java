@@ -34,6 +34,12 @@ public class FrmPrincipal extends JFrame {
         this.setLocationRelativeTo(null);
         this.asociarEventos();
         this.self = this;
+        combosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
     private  void  asociarEventos(){
         tabsButton.addActionListener(new ActionListener() {
