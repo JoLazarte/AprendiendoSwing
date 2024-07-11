@@ -37,7 +37,8 @@ public class FrmPrincipal extends JFrame {
         combosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                FrmDemoCombo frame = new FrmDemoCombo(self);
+                frame.setVisible(true);
             }
         });
     }

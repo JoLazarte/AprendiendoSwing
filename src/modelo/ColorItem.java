@@ -6,7 +6,6 @@ public class ColorItem {
     public int getCode() {
         return code;
     }
-
     public void setCode(int code) {
         this.code = code;
     }
@@ -16,7 +15,6 @@ public class ColorItem {
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
@@ -24,6 +22,9 @@ public class ColorItem {
     public  ColorItem(int code, String description){
         this.code = code;
         this.description = description;
+    }
+    public  String toString(){
+        return this.description;
     }
 
 }

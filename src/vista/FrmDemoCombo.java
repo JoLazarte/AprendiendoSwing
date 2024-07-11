@@ -2,6 +2,8 @@ package vista;
 import modelo.ColorItem;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,5 +39,11 @@ public class FrmDemoCombo extends  JDialog {
         model.addAll(colores);
         cbColores.setModel(model);
 
+        cbColores.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+
+            }
+        });
     }
 }
