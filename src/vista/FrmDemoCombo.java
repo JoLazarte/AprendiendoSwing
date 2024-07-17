@@ -42,6 +42,10 @@ public class FrmDemoCombo extends  JDialog {
         cbColores.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
+                lblItemIndex.setText(String.valueOf(cbColores.getSelectedIndex()));
+                ColorItem aux = (ColorItem) cbColores.getSelectedItem();
+                lblCodigoInterno.setText(String.valueOf(aux.getCode()));
+                lblSelectedValue.setText(aux.getDescription());
 
             }
         });

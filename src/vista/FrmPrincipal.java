@@ -34,19 +34,35 @@ public class FrmPrincipal extends JFrame {
         this.setLocationRelativeTo(null);
         this.asociarEventos();
         this.self = this;
-        combosButton.addActionListener(new ActionListener() {
+
+
+        gridsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                FrmDemoCombo frame = new FrmDemoCombo(self);
+                FrmGridDemo frame = new FrmGridDemo(self);
                 frame.setVisible(true);
             }
         });
     }
     private  void  asociarEventos(){
+        listasButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FrmListaDemo frame = new FrmListaDemo(self);
+                frame.setVisible(true);
+            }
+        });
         tabsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 FrmTabsDemo frame = new FrmTabsDemo(self,"Demo con TABS");
+                frame.setVisible(true);
+            }
+        });
+        combosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FrmDemoCombo frame = new FrmDemoCombo(self);
                 frame.setVisible(true);
             }
         });
